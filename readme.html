@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เอกสารโปรเจกต์ - Sakpimon Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="padding-top: 70px;">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">ศูนย์ <span>ICT ชุมชน</span></a>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+                <li><a href="activities.html" class="nav-link">กิจกรรมของผม</a></li>
+                <li><a href="design.html" class="nav-link">การออกแบบ UX/UI</a></li>
+                <li><a href="about.html" class="nav-link">เกี่ยวกับเรา</a></li>
+                <li><a href="readme.html" class="nav-link accent-color">ข้อมูลโปรเจกต์</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 50vh;">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=2069" alt="Project Documentation">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>เอกสาร<span class="accent-color">โปรเจกต์</span></h1>
+            <p>รายละเอียดการพัฒนา โครงสร้าง และแนวคิดของเว็บไซต์ศูนย์การเรียนรู้ ICT ชุมชน</p>
+        </div>
+    </header>
+
+    <section class="section container">
+        <div class="text-center" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Project Documentation</h2>
+            <p class="text-muted">ข้อมูลทางเทคนิคและรายละเอียดการพัฒนาฉบับสมบูรณ์</p>
+        </div>
+
+        <div class="grid-facilities" style="grid-template-columns: 1fr; gap: 2rem;">
+
+            <!-- Section 1: Overview -->
+            <div class="facility-card">
+                <h3 class="accent-color">📋 1. ข้อมูลทั่วไป (Project Overview)</h3>
+                <p>โปรเจกต์นี้เป็นการพัฒนาเว็บไซต์สำหรับ <strong>ศูนย์การเรียนรู้ ICT ชุมชน เทศบาลเมืองเสาธงหิน</strong> เพื่อให้เป็นศูนย์กลางการเข้าถึงข้อมูลข่าวสารและเทคโนโลยีสำหรับประชาชนในชุมชน โดยมุ่งเน้นการสร้างประสบการณ์การใช้งานที่ทันสมัย เข้าถึงได้ง่าย และรองรับทุกขนาดหน้าจอ</p>
+                <div style="margin-top: 1rem; padding: 1rem; background: var(--silver-light); border-radius: 1rem; border-left: 5px solid var(--silver-dark);">
+                    <p><strong>ผู้พัฒนา:</strong> นายศักดิ์พิมล ญาณโรจน์ (Sakpimon Yanarod)</p>
+                    <p><strong>สถานศึกษา:</strong> วิทยาลัยเทคโนโลยีสยามบริหารธุรกิจ นนทบุรี (ปวส.)</p>
+                </div>
+            </div>
+
+            <!-- Section 2: Objectives -->
+            <div class="facility-card">
+                <h3 class="accent-color">🎯 2. วัตถุประสงค์ของโครงการ (Project Objectives)</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                    <div style="padding: 1rem; background: var(--silver-light); border-radius: 1rem;">
+                        <strong>🎓 ด้านการศึกษา:</strong> ประยุกต์ใช้ความรู้จากวิชาการเขียนเว็บ (HTML, CSS, JS) มาสร้างผลงานที่ใช้งานได้จริง
+                    </div>
+                    <div style="padding: 1rem; background: var(--silver-light); border-radius: 1rem;">
+                        <strong>🌐 ด้านการบริการ:</strong> สร้างสื่อประชาสัมพันธ์บริการฟรี เช่น อินเทอร์เน็ต และคอมพิวเตอร์ ให้คนในชุมชนรับทราบ
+                    </div>
+                    <div style="padding: 1rem; background: var(--silver-light); border-radius: 1rem;">
+                        <strong>🎨 ด้านการออกแบบ:</strong> ศึกษาและนำหลักการ UX/UI มาใช้เพื่อลดความซับซ้อนและเพิ่มความสวยงาม
+                    </div>
+                    <div style="padding: 1rem; background: var(--silver-light); border-radius: 1rem;">
+                        <strong>⚙️ ด้านเทคนิค:</strong> ฝึกฝนการจัดการข้อมูลแบบ Dynamic Rendering เพื่อให้เว็บไซต์แก้ไขข้อมูลได้ง่าย
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Design Concept -->
+            <div class="facility-card">
+                <h3 class="accent-color">🎨 3. แนวคิดการออกแบบ (Design Concept)</h3>
+                <div style="margin-top: 1rem;">
+                    <p><strong>ธีมสี "Luxury White & Silver":</strong> เลือกใช้สีขาวแพลตตินัม และสีเงิน เพื่อสื่อถึงความทันสมัย สะอาด และมีความเป็นมืออาชีพ</p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-muted);">
+                        <li><strong>Visual Hierarchy:</strong> ใช้ขนาดฟอนต์ที่แตกต่างกันชัดเจนเพื่อนำสายตาผู้ใช้งาน</li>
+                        <li><strong>Responsiveness:</strong> ใช้ Media Queries แบ่งระดับหน้าจอ (Desktop, Tablet, Mobile)</li>
+                        <li><strong>Glassmorphism:</strong> ใช้เอฟเฟกต์กระจกฝ้าในส่วน Navbar เพื่อสร้างมิติ</li>
+                        <li><strong>Interaction:</strong> มี Micro-interactions ในส่วนของ Card และ Tooltips</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 4: Technical Specifications -->
+            <div class="facility-card">
+                <h3 class="accent-color">🛠️ 4. รายละเอียดทางเทคนิค (Technical Specifications)</h3>
+                <div style="margin-top: 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div>
+                        <strong style="display: block; margin-bottom: 0.5rem;">Technology Stack:</strong>
+                        <ul style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--text-muted);">
+                            <li>✅ HTML5 (Semantic Structure)</li>
+                            <li>✅ CSS3 (Custom Props, Grid, Flexbox)</li>
+                            <li>✅ Vanilla JavaScript (ES6+)</li>
+                            <li>✅ Google Fonts (Sarabun)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong style="display: block; margin-bottom: 0.5rem;">ระบบการทำงาน (Logic Flow):</strong>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">
+                            ข้อมูลกิจกรรมจะถูกเก็บใน `activities.js` (Data Layer), ถูกประมวลผลโดย `main.js` (Logic Layer), และแสดงผลผ่าน HTML/CSS (Presentation Layer)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: File Structure -->
+            <div class="facility-card">
+                <h3 class="accent-color">📂 5. โครงสร้างไฟล์และโฟลเดอร์ (Project Structure)</h3>
+                <pre style="background: var(--silver-light); padding: 1.5rem; border-radius: 1rem; overflow-x: auto; font-family: 'Courier New', Courier, monospace; border: 1px solid var(--silver-medium); margin-top: 1rem;">
+/
+├── index.html          # หน้าแรก (Landing Page)
+├── activities.html     # หน้ากิจกรรม (Dynamic Rendering)
+├── design.html         # หน้าการออกแบบ UX/UI
+├── about.html          # หน้าเกี่ยวกับเรา
+├── readme.html         # หน้าข้อมูลโปรเจกต์
+├── README.md           # เอกสารกำกับโปรเจกต์
+├── css/
+│   └── style.css       # สไตล์หลัก (Luxury Theme & Responsive)
+├── js/
+│   ├── main.js         # โลจิกควบคุม Navbar และ Renderer
+│   └── activities.js    # ฐานข้อมูลกิจกรรม
+└── public/             # ทรัพยากรทั้งหมด
+    └── images/
+        ├── activities/ # รูปภาพกิจกรรม
+        ├── profile/    # รูปโปรไฟล์
+        ├── ict/        # รูปภาพศูนย์ ICT
+        └── tech/       # รูปภาพเทคโนโลยี
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 5rem;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>ผู้พัฒนา</h3>
+                    <p class="text-muted">นายศักดิ์พิมล ญาณโรจน์<br>Sakpimon Yanarod</p>
+                </div>
+                <div class="footer-section">
+                    <h3>เมนู</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="accent-color">หน้าแรก</a></li>
+                        <li><a href="activities.html">กิจกรรมของผม</a></li>
+                        <li><a href="design.html">การออกแบบ UX/UI</a></li>
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="readme.html">ข้อมูลโปรเจกต์</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>สถานศึกษา</h3>
+                    <p class="text-muted">วิทยาลัยเทคโนโลยีสยามบริหารธุรกิจ นนทบุรี</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Sakpimon Yanarod. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

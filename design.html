@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หลักการออกแบบ UX/UI - Sakpimon Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="padding-top: 70px;">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">ศูนย์ <span>ICT ชุมชน</span></a>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+                <li><a href="activities.html" class="nav-link">กิจกรรมของผม</a></li>
+                <li><a href="design.html" class="nav-link accent-color">การออกแบบ UX/UI</a></li>
+                <li><a href="about.html" class="nav-link">เกี่ยวกับเรา</a></li>
+                <li><a href="readme.html" class="nav-link">ข้อมูลโปรเจกต์</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 60vh;">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1586717791821-607367956675?auto=format&fit=crop&q=80&w=2070" alt="UX UI Design">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>การออกแบบ <span class="accent-color">UX/UI</span></h1>
+            <p>เบื้องหลังแนวคิดการออกแบบเว็บไซต์ เพื่อสร้างประสบการณ์ที่ดีที่สุดให้กับผู้ใช้งาน</p>
+        </div>
+    </header>
+
+    <section class="section container">
+        <div class="text-center" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">แนวคิดการออกแบบ</h2>
+            <p class="text-muted" style="max-width: 800px; margin: 0 auto;">
+                การออกแบบเว็บไซต์นี้มุ่งเน้นไปที่ความเรียบหรู (Luxury) ความเรียบง่าย (Simplicity)
+                และการเข้าถึงข้อมูลที่รวดเร็ว โดยนำหลักการทาง UX/UI มาประยุกต์ใช้ดังนี้:
+            </p>
+            <p style="font-size: 0.9rem; color: var(--silver-dark); margin-top: 1rem;">(💡 ลองนำเมาส์ไปชี้ที่ <u>"ตัวอย่างในเว็บ"</u> เพื่อดูผลลัพธ์จริง)</p>
+        </div>
+
+        <div class="grid-facilities">
+            <!-- Principle 1: Visual Hierarchy -->
+            <div class="facility-card">
+                <div class="accent-color" style="font-size: 2.5rem; margin-bottom: 1rem;">📐</div>
+                <h3>Visual Hierarchy</h3>
+                <p class="text-muted">การจัดลำดับความสำคัญทางสายตา โดยใช้ขนาดฟอนต์ที่แตกต่างกันอย่างชัดเจนระหว่าง Header และ Body เพื่อให้ผู้ใช้ทราบว่าส่วนใดคือหัวข้อหลักและส่วนใดคือรายละเอียด</p>
+                <div class="learning-box">
+                    <span class="tooltip-trigger">ตัวอย่างในเว็บ
+                        <span class="tooltip-content">
+                            <div class="tooltip-visual">
+                                <div style="text-align: left; width: 100%;">
+                                    <span class="mini-header">หัวข้อหลัก (H1)</span>
+                                    <span class="mini-text">รายละเอียดเนื้อหาที่มีขนาดเล็กกว่า เพื่อให้เกิดลำดับการอ่าน</span>
+                                </div>
+                            </div>
+                            การใช้ขนาดที่แตกต่างกันอย่างชัดเจนทำให้ผู้ใช้กวาดสายตาอ่านเนื้อหาได้อย่างรวดเร็ว
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Principle 2: Color Psychology -->
+            <div class="facility-card">
+                <div class="accent-color" style="font-size: 2.5rem; margin-bottom: 1rem;">🎨</div>
+                <h3>Color Psychology</h3>
+                <p class="text-muted">เลือกใช้สี Platinum White และ Silver เพื่อสร้างความรู้สึกหรูหรา ทันสมัย และน่าเชื่อถือ ตามหลักจิตวิทยาของสีที่สื่อถึงความสะอาดและความเป็นมืออาชีพ</p>
+                <div class="learning-box">
+                    <span class="tooltip-trigger">ตัวอย่างในเว็บ
+                        <span class="tooltip-content">
+                            <div class="tooltip-visual">
+                                <div class="color-palette">
+                                    <div class="color-dot" style="background: #ffffff;"></div>
+                                    <div class="color-dot" style="background: #f8f9fa;"></div>
+                                    <div class="color-dot" style="background: #e9ecef;"></div>
+                                    <div class="color-dot" style="background: #6c757d;"></div>
+                                </div>
+                            </div>
+                            การใช้สีโทนสว่างตัดกับสีเงินเข้ม สร้างความรู้สึก Luxury และดูสะอาดตา
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Principle 3: Consistency -->
+            <div class="facility-card">
+                <div class="accent-color" style="font-size: 2.5rem; margin-bottom: 1rem;">🔄</div>
+                <h3>Consistency</h3>
+                <p class="text-muted">การรักษาความสม่ำเสมอขององค์ประกอบ เช่น รัศมีขอบโค้ง (Border Radius) ของปุ่มและ Card ที่เท่ากันทั่วทั้งเว็บไซต์ ทำให้ผู้ใช้รู้สึกถึงความเป็นอันหนึ่งอันเดียวกัน</p>
+                <div class="learning-box">
+                    <span class="tooltip-trigger">ตัวอย่างในเว็บ
+                        <span class="tooltip-content">
+                            <div class="tooltip-visual">
+                                <div class="consistency-box"></div>
+                                <div class="consistency-box"></div>
+                                <div class="consistency-box"></div>
+                            </div>
+                            การใช้ความโค้งมนที่เท่ากันทุกจุดช่วยลดความแข็งกระด้างและดูทันสมัย
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Principle 4: Responsiveness -->
+            <div class="facility-card">
+                <div class="accent-color" style="font-size: 2.5rem; margin-bottom: 1rem;">📱</div>
+                <h3>Responsiveness</h3>
+                <p class="text-muted">ออกแบบโดยยึดหลัก Mobile-First และ Fluid Grid เพื่อให้เว็บไซต์แสดงผลได้อย่างสมบูรณ์ในทุกขนาดหน้าจอ ตั้งแต่คอมพิวเตอร์ตั้งโต๊ะไปจนถึงสมาร์ทโฟน</p>
+                <div class="learning-box">
+                    <span class="tooltip-trigger">ตัวอย่างในเว็บ
+                        <span class="tooltip-content">
+                            <div class="tooltip-visual">
+                                <div class="resp-icon"></div>
+                            </div>
+                            การใช้ CSS Grid ทำให้จำนวน Card ปรับเปลี่ยนอัตโนมัติตามความกว้างหน้าจอ
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Principle 5: Interaction Design -->
+            <div class="facility-card">
+                <div class="accent-color" style="font-size: 2.5rem; margin-bottom: 1rem;">🖱️</div>
+                <h3>Interaction Design</h3>
+                <p class="text-muted">การสร้าง Feedback ให้กับผู้ใช้งานผ่าน Micro-interactions เช่น การเปลี่ยนสีหรือการยกตัวของ Card เมื่อนำเมาส์ไปวาง เพื่อบอกให้ผู้ใช้รู้ว่าองค์ประกอบนั้นสามารถโต้ตอบได้</p>
+                <div class="learning-box">
+                    <span class="tooltip-trigger">ตัวอย่างในเว็บ
+                        <span class="tooltip-content">
+                            <div class="tooltip-visual">
+                                <div class="mini-btn">Hover Me!</div>
+                            </div>
+                            การยกตัวขึ้นเล็กน้อยสร้างความรู้สึกว่า Card นั้น "ลอย" และพร้อมให้คลิก
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Principle 6: Glassmorphism -->
+            <div class="facility-card">
+                <div class="accent-color" style="font-size: 2.5rem; margin-bottom: 1rem;">💎</div>
+                <h3>Glassmorphism</h3>
+                <p class="text-muted">การนำเทรนด์การออกแบบสมัยใหม่มาใช้ โดยการทำให้พื้นหลังมีความโปร่งแสงและเบลอ (Blur) เลียนแบบลักษณะของกระจกฝ้า เพิ่มมิติและความลึกให้กับเว็บไซต์</p>
+                <div class="learning-box">
+                    <span class="tooltip-trigger">ตัวอย่างในเว็บ
+                        <span class="tooltip-content">
+                            <div class="tooltip-visual">
+                                <div class="glass-preview">Glass Effect</div>
+                            </div>
+                            ทำให้ Navbar ดูโปร่งแสงและกลมกลืนไปกับเนื้อหาที่เลื่อนผ่านด้านล่าง
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 5rem;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>หน่วยงานดูแล</h3>
+                    <p class="text-muted">เทศบาลเมืองเสาธงหิน<br>มุ่งมั่นพัฒนาชุมชนด้วยเทคโนโลยีและสารสนเทศ</p>
+                </div>
+                <div class="footer-section">
+                    <h3>เมนู</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="accent-color">หน้าแรก</a></li>
+                        <li><a href="activities.html">กิจกรรมของผม</a></li>
+                        <li><a href="design.html">การออกแบบ UX/UI</a></li>
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="readme.html">ข้อมูลโปรเจกต์</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>เจ้าของผลงาน</h3>
+                    <p class="text-muted">นายศักดิ์พิมล ญาณโรจน์</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Sakpimon Yanarod. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
