@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;600;700&family=Noto+Sans+Thai:wght@400;600;700&family=Sarabun:wght@300;400;700&display=swap');
+
 :root {
     --platinum-white: #ffffff;
     --silver-light: #f8f9fa;
@@ -15,6 +17,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, .nav-logo {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+h5, h6, .facility-card h3, .activity-title, .activity-topic {
+    font-family: 'Noto Sans Thai', sans-serif;
 }
 
 body {
@@ -206,11 +216,31 @@ ul {
 }
 
 /* Facilities Cards */
-.grid-facilities {
+.grid-facilities, .grid-facilities-2x2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
     margin-top: 3rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.grid-facilities {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-facilities-2x2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-facilities-centered {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    justify-content: center;
 }
 
 .facility-card {
@@ -220,6 +250,8 @@ ul {
     border: 1px solid var(--silver-medium);
     transition: var(--transition);
     box-shadow: var(--shadow-luxury);
+    width: 100%;
+    max-width: 350px;
 }
 
 .facility-card:hover {
@@ -234,11 +266,18 @@ ul {
     font-weight: 700;
 }
 
+
+.facility-card h3 {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 /* Gallery Section */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
     margin-top: 3rem;
 }
 
@@ -249,6 +288,7 @@ ul {
     aspect-ratio: 1/1;
     border: 1px solid var(--silver-medium);
     box-shadow: var(--shadow-luxury);
+    cursor: pointer;
 }
 
 .gallery-item img {
@@ -260,6 +300,48 @@ ul {
 
 .gallery-item:hover img {
     transform: scale(1.1);
+}
+
+/* Lightbox Modal */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    cursor: zoom-out;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 1rem;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease-out;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    font-weight: 300;
+    transition: var(--transition);
+}
+
+.lightbox-close:hover {
+    transform: scale(1.2);
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 
 /* Activities Section */
@@ -564,12 +646,13 @@ footer {
 
     .hero {
         height: auto;
-        padding: 100px 0 4rem;
+        padding: 150px 0 4rem;
     }
 
     .hero-content h1 {
         font-size: 2rem;
         line-height: 1.2;
+        margin-top: 2rem;
     }
 
     .hero-content p {
@@ -591,7 +674,7 @@ footer {
         gap: 1rem;
     }
 
-    .grid-facilities {
+    .grid-facilities, .grid-facilities-2x2 {
         grid-template-columns: 1fr !important;
         gap: 1.5rem;
     }

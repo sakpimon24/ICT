@@ -6,7 +6,7 @@
     <title>ศูนย์การเรียนรู้ ICT ชุมชน เทศบาลเมืองเสาธงหิน</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;600;700&family=Noto+Sans+Thai:wght@400;600;700&family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,7 +53,7 @@
 
             <div class="grid-facilities" style="text-align: left;">
                 <div class="facility-card">
-                    <div class="accent-color" style="font-size: 1.5rem; margin-bottom: 1rem;">🎯 วัตถุประสงค์ด้านการเรียนรู้</div>
+                    <div class="accent-color" style="font-size: 1.3rem; margin-bottom: 1rem;">🎯 วัตถุประสงค์ด้านการเรียนรู้</div>
                     <p class="text-muted">เป็นแหล่งอบรมสร้างองค์ความรู้ให้แก่ สตรี เด็ก เยาวชน ผู้สูงอายุ ผู้พิการ และประชาชนทั่วไป เพื่อพัฒนาทักษะดิจิทัล</p>
                 </div>
                 <div class="facility-card">
@@ -82,6 +82,10 @@
                     <div class="accent-color" style="font-size: 2.5rem;">📶</div>
                     <h3>อินเทอร์เน็ตฟรี</h3>
                     <p class="text-muted">บริการอินเทอร์เน็ตความเร็วสูง เพื่อการเข้าถึงข้อมูลข่าวสารทั่วโลก</p>
+                    <div style="margin-top: 1rem; padding: 0.8rem; background: var(--silver-light); border-radius: 0.5rem; border: 1px dashed var(--silver-dark); font-size: 0.9rem; text-align: left;">
+                        <strong>SSID:</strong> ICT_ROOM <br>
+                        <strong>Password:</strong> 021502553
+                    </div>
                 </div>
                 <div class="facility-card">
                     <div class="accent-color" style="font-size: 2.5rem;">📚</div>
@@ -95,7 +99,7 @@
     <section id="facilities" class="section" style="background: var(--silver-light);">
         <div class="container">
             <h2 class="text-center" style="font-size: 2.5rem; margin-bottom: 3rem;">สิ่งอำนวยความสะดวก</h2>
-            <div class="grid-facilities">
+            <div class="grid-facilities-2x2">
                 <div class="facility-card">
                     <div class="accent-color" style="font-size: 2rem;">💻</div>
                     <h3>โซนคอมพิวเตอร์</h3>
@@ -122,7 +126,7 @@
 
     <section class="section container text-center">
         <h2 style="font-size: 2.5rem; margin-bottom: 3rem;">จุดเด่นของศูนย์ ICT ชุมชน</h2>
-        <div class="grid-facilities">
+        <div class="grid-facilities-centered">
             <div class="facility-card" style="padding: 1.5rem; text-align: center;">
                 <h4 class="accent-color">Community Hub</h4>
                 <p class="text-muted" style="font-size: 0.9rem;">ศูนย์กลางการเรียนรู้ของคนทุกวัย</p>
@@ -153,6 +157,12 @@
             <!-- Images will be rendered here by main.js -->
         </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Full size gallery image" id="lightbox-img">
+    </div>
 
     <footer>
         <div class="container">

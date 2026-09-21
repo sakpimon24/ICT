@@ -47,10 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Gallery Rendering
+    // Gallery Rendering with Lightbox
     const galleryContainer = document.getElementById('gallery-list');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.querySelector('.lightbox-close');
+
     if (galleryContainer) {
-        // รายชื่อรูปภาพจริงจากโฟลเดอร์ album
         const galleryImages = [
             'album/pics_12074_1.jpg',
             'album/pics_12074_2.jpg',
@@ -77,14 +80,37 @@ document.addEventListener('DOMContentLoaded', () => {
             'album/unnamed (19).webp',
             'album/unnamed (20).webp',
             'album/unnamed (21).webp',
-            'album/unnamed (22).webp'
+            'album/unnamed (22).webp',
+            'album/IMG_20260921_105822.jpg',
+            'album/IMG_20260921_105829.jpg'
         ];
 
         galleryImages.forEach(imgSrc => {
             const item = document.createElement('div');
             item.className = 'gallery-item';
             item.innerHTML = `<img src="${imgSrc}" alt="ICT Gallery Image">`;
+
+            // Lightbox trigger
+            item.addEventListener('click', () => {
+                lightboxImg.src = imgSrc;
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+
             galleryContainer.appendChild(item);
+        });
+    }
+
+    // Close Lightbox
+    if (lightbox && lightboxClose) {
+        const closeLightbox = () => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        };
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
         });
     }
 });
