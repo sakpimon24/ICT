@@ -92,9 +92,47 @@
                 </div>
             </div>
 
-            <!-- Section 4: Technical Specifications -->
+            <!-- Section 4: Database & Data Management -->
             <div class="facility-card full-width-card" style="margin-top: 2rem;">
-                <h3 class="accent-color">🛠️ 4. รายละเอียดทางเทคนิค (Technical Specifications)</h3>
+                <h3 class="accent-color">💾 4. การจัดการข้อมูลทั้งระบบ (Project Database & Asset Management)</h3>
+                <div style="margin-top: 1rem;">
+                    <p>โปรเจกต์นี้ใช้แนวทางการจัดการข้อมูลแบบ <strong>Flat-File Database</strong> และ <strong>Asset-Based Storage</strong> ซึ่งเป็นการจัดเก็บข้อมูลเชิงโครงสร้างร่วมกับทรัพยากรในรูปแบบไฟล์ เพื่อประสิทธิภาพสูงสุดในการแสดงผล</p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                        <div style="padding: 1rem; background: var(--silver-light); border-radius: 1rem;">
+                            <strong>📁 การเก็บข้อมูลเชิงโครงสร้าง (Structured Data):</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
+                                ใช้รูปแบบ <strong>JSON-like Array of Objects</strong> ในไฟล์ JavaScript เพื่อเป็นแหล่งข้อมูลหลัก:
+                                <ul style="padding-left: 1.2rem; margin-top: 0.5rem;">
+                                    <li><code style="color: var(--accent-color);">activities.js</code>: เก็บรายละเอียดกิจกรรม (ชื่อ, หัวข้อ, คำอธิบาย, ทักษะที่ได้รับ)</li>
+                                    <li><code style="color: var(--accent-color);">main.js</code>: เก็บรายชื่อไฟล์รูปภาพสำหรับหน้า Gallery ทั้งหมด</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div style="padding: 1rem; background: var(--silver-light); border-radius: 1rem;">
+                            <strong>🖼️ การจัดการทรัพยากรภาพ (Asset Management):</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
+                                จัดเก็บรูปภาพแบบแยกหมวดหมู่ใน <code style="color: var(--accent-color);">/public/images/</code> เพื่อให้ง่ายต่อการเรียกใช้:
+                                <ul style="padding-left: 1.2rem; margin-top: 0.5rem;">
+                                    <li><strong>activities/</strong>: ภาพประกอบกิจกรรมรายตัว</li>
+                                    <li><strong>profile/</strong>: ภาพประวัติส่วนตัว</li>
+                                    <li><strong>ict/</strong> และ <strong>tech/</strong>: ภาพบรรยากาศและเทคโนโลยี</li>
+                                    <li><strong>album/</strong>: คลังภาพกิจกรรมรวม</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 1rem; background: var(--silver-light); border-radius: 1rem; border-left: 5px solid var(--accent-color);">
+                        <strong style="color: var(--accent-color);">🚀 ทำไมถึงใช้วิธีนี้?</strong>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
+                            เนื่องจากเป็น Static Website การใช้ Flat-File ทำให้ <strong>ไม่มี Latency</strong> ในการดึงข้อมูล (โหลดทันที), <strong>ลดความซับซ้อน</strong> ในการดูแล Server และมี <strong>Reliability</strong> สูงเพราะไม่มีจุดล่มของฐานข้อมูล (No Single Point of Failure)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Technical Specifications -->
+            <div class="facility-card full-width-card" style="margin-top: 2rem;">
+                <h3 class="accent-color">🛠️ 5. รายละเอียดทางเทคนิค (Technical Specifications)</h3>
                 <div style="margin-top: 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
                     <div>
                         <strong style="display: block; margin-bottom: 0.5rem;">Technology Stack:</strong>
@@ -110,15 +148,15 @@
                     <div>
                         <strong style="display: block; margin-bottom: 0.5rem;">ระบบการทำงาน (Logic Flow):</strong>
                         <p style="font-size: 0.95rem; color: var(--text-muted);">
-                            ข้อมูลกิจกรรมจะถูกเก็บใน `activities.js` (Data Layer), ถูกประมวลผลโดย `main.js` (Logic Layer), และแสดงผลผ่าน HTML/CSS (Presentation Layer)
+                            ข้อมูลกิจกรรมจะถูกเก็บใน <code style="color: var(--accent-color);">activities.js</code> (Data Layer), ถูกประมวลผลโดย <code style="color: var(--accent-color);">main.js</code> (Logic Layer), และแสดงผลผ่าน HTML/CSS (Presentation Layer)
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 5: File Structure -->
+            <!-- Section 6: File Structure -->
             <div class="facility-card full-width-card" style="margin-top: 2rem;">
-                <h3 class="accent-color">📂 5. โครงสร้างไฟล์และโฟลเดอร์ (Project Structure)</h3>
+                <h3 class="accent-color">📂 6. โครงสร้างไฟล์และโฟลเดอร์ (Project Structure)</h3>
                 <pre style="background: var(--silver-light); padding: 1.5rem; border-radius: 1rem; overflow-x: auto; font-family: 'Courier New', Courier, monospace; border: 1px solid var(--silver-medium); margin-top: 1rem;">
 /
 ├── index.html          # หน้าแรก (Landing Page)

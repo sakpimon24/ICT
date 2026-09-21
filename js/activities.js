@@ -42,61 +42,21 @@ const activitiesData = [
   {
     id: 5,
     number: "05",
-    title: "รอเพิ่มข้อมูลกิจกรรม",
-    topic: "Pending",
-    location: "-",
-    description: "กิจกรรมที่ 5 กำลังดำเนินการจัดเก็บข้อมูล...",
-    learning: "-",
-    image: "https://via.placeholder.com/800x450?text=Coming+Soon"
+    title: "การสอนเยาวชนเขียนโปรแกรม Python เบื้องต้น",
+    topic: "Programming Fundamentals",
+    location: "ศูนย์ ICT ชุมชน",
+    description: "ถ่ายทอดความรู้พื้นฐานด้านการเขียนโปรแกรมด้วยภาษา Python ให้กับเยาวชนในชุมชน โดยเน้นการเรียนรู้ผ่านการลงมือปฏิบัติ (Learning by Doing) โดยมีการสอนทำโปรเจกต์เบื้องต้นคือ โปรแกรมคำนวณเกรด เพื่อสร้างพื้นฐานด้านตรรกะ (Logic) และการคิดเชิงคำนวณ (Computational Thinking)",
+    learning: "พัฒนาทักษะการถ่ายทอดความรู้ด้าน Programming ให้กับผู้เริ่มต้น และการออกแบบโจทย์การเรียนรู้ที่น่าสนใจสำหรับเยาวชน",
+    image: "public/images/activities/สอนเยาวชนเขียนโปรแกรม python เบื้องต้น.jpg"
   },
   {
     id: 6,
     number: "06",
-    title: "รอเพิ่มข้อมูลกิจกรรม",
-    topic: "Pending",
-    location: "-",
-    description: "กิจกรรมที่ 6 กำลังดำเนินการจัดเก็บข้อมูล...",
-    learning: "-",
-    image: "https://via.placeholder.com/800x450?text=Coming+Soon"
-  },
-  {
-    id: 7,
-    number: "07",
-    title: "รอเพิ่มข้อมูลกิจกรรม",
-    topic: "Pending",
-    location: "-",
-    description: "กิจกรรมที่ 7 กำลังดำเนินการจัดเก็บข้อมูล...",
-    learning: "-",
-    image: "https://via.placeholder.com/800x450?text=Coming+Soon"
-  },
-  {
-    id: 8,
-    number: "08",
-    title: "รอเพิ่มข้อมูลกิจกรรม",
-    topic: "Pending",
-    location: "-",
-    description: "กิจกรรมที่ 8 กำลังดำเนินการจัดเก็บข้อมูล...",
-    learning: "-",
-    image: "https://via.placeholder.com/800x450?text=Coming+Soon"
-  },
-  {
-    id: 9,
-    number: "09",
-    title: "รอเพิ่มข้อมูลกิจกรรม",
-    topic: "Pending",
-    location: "-",
-    description: "กิจกรรมที่ 9 กำลังดำเนินการจัดเก็บข้อมูล...",
-    learning: "-",
-    image: "https://via.placeholder.com/800x450?text=Coming+Soon"
-  },
-  {
-    id: 10,
-    number: "10",
-    title: "รอเพิ่มข้อมูลกิจกรรม",
-    topic: "Pending",
-    location: "-",
-    description: "กิจกรรมที่ 10 กำลังดำเนินการจัดเก็บข้อมูล...",
-    learning: "-",
-    image: "https://via.placeholder.com/800x450?text=Coming+Soon"
+    title: "การอัปเกรดระบบปฏิบัติการ Windows 10 เป็น Windows 11",
+    topic: "OS Migration & Update",
+    location: "ศูนย์ ICT ชุมชน",
+    description: "ดำเนินการอัปเกรดระบบปฏิบัติการจาก Windows 10 เป็น Windows 11 เพื่อให้เครื่องคอมพิวเตอร์มีประสิทธิภาพการทำงานที่ทันสมัย รองรับซอฟต์แวร์รุ่นใหม่ และเพิ่มความปลอดภัยของระบบ พร้อมทั้งดูแลการอัปเดต Patch ความปลอดภัยอย่างต่อเนื่อง",
+    learning: "เรียนรู้ขั้นตอนการ Migration ระบบปฏิบัติการอย่างเป็นระบบ การสำรองข้อมูลก่อนการอัปเกรด และการแก้ไขปัญหาความเข้ากันได้ของ Hardware",
+    image: "public/images/activities/อัพเกรด windows จาก 10 ไปยัง 11 และคอยอัพเดทเรื่อยๆ.jpg"
   }
 ];
