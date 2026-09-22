@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h3 class="activity-topic">${act.topic}</h3>
                     <div class="activity-meta">
                         <span>📍 ${act.location}</span>
-                        <span>📅 ปีการศึกษา 2568</span>
+                        <span>📅 ปีการศึกษา 2569</span>
                     </div>
                     <p class="text-muted">${act.description}</p>
                     <div class="learning-box">
